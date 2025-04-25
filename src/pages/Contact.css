@@ -1,0 +1,11 @@
+#contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 25rem;
+}
+#contact img {
+    width: 50rem;
+    height: 50rem;
+    margin-right: 5rem;
+}
