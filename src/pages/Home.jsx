@@ -57,7 +57,6 @@ const Home = () => {
   <StarBackground />
     <Projects />
     <Contact/>
-    
   </section>
   </main>
   );
