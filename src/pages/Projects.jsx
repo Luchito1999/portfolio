@@ -4,6 +4,7 @@ import VanillaTilt from 'vanilla-tilt'
 import fotoreact from '../assets/ecommerce.PNG'
 import happycook from '../assets/happycook.PNG'
 import portfolio from '../assets/portfolio.PNG'
+import logoGH from '../assets/github.svg'
 
 
 const projectData = [
@@ -29,8 +30,8 @@ const projectData = [
     title: "Portfolio Luciano",
     description: "Este portfolio personal donde se enseña el trabajo front-end realizado con Tailwind y React",
     image: portfolio, // Aquí usa la importación
-    github: "https://github.com/otro-repo",
-    live: "https://otro-proyecto.com",
+    github: "https://github.com/Luchito1999/portfolio",
+    live: "https://luchoportfolio.netlify.app/",
     tags: ["#React", "#Tailwind", "#JavaScript"],
     colors: ["#f72585", "#06b6d4", "#3178c6"]
   }
@@ -71,7 +72,7 @@ function Projects() {
       rel="noopener noreferrer"
       className="github-popup"
     >
-      <img src="../src/assets/github.svg" alt="GitHub" />
+      <img src={logoGH} alt="GitHub" />
     </a>
     <a href={project.live} target="_blank">
       <img src={project.image} alt={project.title} />
