@@ -2,15 +2,13 @@
 <html lang="es" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/portfolio/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Luciano | Portfolio</title>
   </head>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
   <body className="scroll-smooth">
-    
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
     <script>
       VanillaTilt.init(document.querySelectorAll(".card"), {
         max: 15,
@@ -19,5 +17,6 @@
         "max-glare": 0.2,
       });
     </script>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
