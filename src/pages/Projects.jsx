@@ -1,12 +1,16 @@
 import './Projects.css'
 import { useEffect, useRef } from 'react'
 import VanillaTilt from 'vanilla-tilt'
+import fotoreact from '../assets/ecommerce.PNG'
+import happycook from '../assets/happycook.PNG'
+import portfolio from '../assets/portfolio.PNG'
+
 
 const projectData = [
   {
     title: "Lucho Store Oficial",
     description: "Página web en donde se pueden realizar ordenes de compra mediante bases de datos externas.",
-    image: "../src/assets/ecommerce.PNG",
+    image: fotoreact, // Aquí usa la importación
     github: "https://github.com/Luchito1999/EcommerceReactJS",
     live: "https://luchito1999.github.io/EcommerceReactJS/",
     tags: ["#React", "#Tailwind", "#JavaScript"],
@@ -15,7 +19,7 @@ const projectData = [
   {
     title: "Happy Cook",
     description: "Página web realizada para utilizar funciones de JavaScript, consultar datos, productos, etc.",
-    image: "../src/assets/happycook.PNG",
+    image: happycook, // Aquí usa la importación
     github: "https://github.com/Luchito1999/HappyCook",
     live: "https://luchito1999.github.io/HappyCook/",
     tags: ["#JavaScript", "#Css"],
@@ -24,7 +28,7 @@ const projectData = [
   {
     title: "Portfolio Luciano",
     description: "Este portfolio personal donde se enseña el trabajo front-end realizado con Tailwind y React",
-    image: "../src/assets/portfolio.PNG",
+    image: portfolio, // Aquí usa la importación
     github: "https://github.com/otro-repo",
     live: "https://otro-proyecto.com",
     tags: ["#React", "#Tailwind", "#JavaScript"],

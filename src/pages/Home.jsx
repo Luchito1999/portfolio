@@ -6,6 +6,7 @@ import Logos from "../components/Logos/Logos";
 import { FaReact, FaHtml5, FaCss3Alt, FaJs, FaGithub } from "react-icons/fa";
 import Projects from "./Projects";
 import Contact from "./Contact";
+import dedos from '../../src/assets/dedos.png'
 
 
 {/* Después del Typed */}
@@ -26,7 +27,7 @@ const Home = () => {
       <h1 className="text-6xl md:text-6xl font-bold text-white mb-4 flex items-center gap-2 titulo">
         <div className="absolute top-0 left-0 w-full h-full -z-10 opacity-20">
 </div>
-        ¡Hola! soy Luciano <img src="../../src/assets/dedos.png" alt=""/>
+        ¡Hola! soy Luciano <img src={dedos} alt=""/>
       </h1>
       
       <div className="text-xl md:text-2xl text-gray-300">

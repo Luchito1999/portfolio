@@ -3,21 +3,25 @@ import "./Logos.css"
 import { useEffect, useRef } from 'react'
 import VanillaTilt from 'vanilla-tilt'
 
+import jsImage from '../../assets/js.svg'
+import cssImage from '../../assets/css.png'
+import reactfoto from '../../assets/react.png'
+
+
 const logosData = [
     {
         title: "Web Developer",
-        image: "../src/assets/js.svg",
+        image: jsImage, // Usar la importación
     },
     {
         title: "Front-end",
-        image: "../src/assets/css.png",
+        image: cssImage, // Usar la importación
     },
     {
         title: "React Developer",
-        image: "../src/assets/react.png",
+        image: reactfoto, // Ya está bien aquí
     }
 ]
-
 
 function Logos() {
     const tiltRef = useRef([])
@@ -37,6 +41,7 @@ function Logos() {
 
     return (
         <section id="logos" className=" flex flex-col items-center justify-center">
+
             <div className="logos-container">
                 {logosData.map((logos, i) => (
                     <div className="logo h-[20rem]" ref={el => tiltRef.current[i] = el} key={i}>
