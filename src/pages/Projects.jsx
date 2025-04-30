@@ -27,8 +27,8 @@ const projectData = [
     image: "../src/assets/portfolio.PNG",
     github: "https://github.com/otro-repo",
     live: "https://otro-proyecto.com",
-    tags: ["#NextJS", "#Tailwind", "#TypeScript"],
-    colors: ["#000", "#06b6d4", "#3178c6"]
+    tags: ["#React", "#Tailwind", "#JavaScript"],
+    colors: ["#f72585", "#06b6d4", "#3178c6"]
   }
 ]
 
