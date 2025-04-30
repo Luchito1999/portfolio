@@ -1,22 +1,30 @@
 #contact {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 10rem;
-  margin-left: 10rem;
-  padding: 5rem 0;
-}
-
-.contact-container {
-  width: 100%;
-}
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* gap: 5rem; */
+    /* padding: 5rem; */
+    height: 100vh;
+    position: relative;
+    overflow: hidden; /* Por si algo se desborda */
+    width: 80%;
+    z-index: 10;
+    margin-top: 30rem;
+  }
+  .contact-container {
+    flex: 0.6; /* ocupa el 60% */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
 .form {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  width: 100%;
+  align-items: center;
+  gap: 1.5rem;
+  /* width: 100%; */
   border: 1px solid #a259ff;
   border-radius: 20px;
   padding: 2rem;
@@ -87,12 +95,11 @@
   box-shadow: 0 5px 15px #a259ff80;
 }
 
-.planeta {
-    height: 10vh;
-width: 100%;
-/* position: absolute; */
-top: 0;
-left: 0;
-/* z-index: 0; */
-overflow: hidden;
-}
+.contact-3d {
+    flex: 0.4; /* ocupa el 40% */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }

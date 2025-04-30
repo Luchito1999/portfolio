@@ -1,10 +1,10 @@
 import { Suspense, useRef } from "react";
-import { motion } from "framer-motion"; // 🚀 agregamos esto
+import { motion } from "framer-motion"; 
 import emailjs from "@emailjs/browser";
 import './Contact.css';
-import {Canvas} from 'react-three-fiber'
+import { Canvas } from '@react-three/fiber'
 import { Planet } from "../components/Planeta/Planet";
-import {OrbitControls} from '@react-three/drei'
+import { OrbitControls } from '@react-three/drei'
 
 const Contact = () => {
   const form = useRef();
@@ -39,8 +39,7 @@ const Contact = () => {
           onSubmit={sendEmail}
           className="form"
         >
-          {/* Animamos el p y h2 */}
-          <motion.p 
+          <motion.p
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
@@ -48,7 +47,7 @@ const Contact = () => {
             ¡Hablemos!
           </motion.p>
 
-          <motion.h2 
+          <motion.h2
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 1 }}
@@ -81,20 +80,29 @@ const Contact = () => {
           <button type="submit">Enviar</button>
         </form>
       </div>
-      <div className="planeta" > 
-      <Canvas camera={{ zoom: 1, position: [0, 0, 10], fov: 50 }}>
-        <ambientLight intensity={0.8} />
-        <pointLight position={[35, 35, 0]} intensity={0.4}/>
-        <pointLight position={[-35, 35, 0]} intensity={0.4}/>
-        <directionalLight position={[10, 10, 5]} intensity={1} />
-        <Suspense fallback={null}>
-        <Planet/>
-        </Suspense >
-        <OrbitControls/>
-      </Canvas>
+      <div className="contact-3d" >
+        <Canvas
+          camera={{
+            position: [0, 0, 4.5], // Estaba en 6 -> lo acercamos
+            fov: 50,
+          }}
+          style={{
+            width: '100%',
+            height: '100%',
+          }}
+        >
+          <ambientLight intensity={1} />
+          <directionalLight position={[5, 5, 5]} />
+          <Suspense fallback={null}>
+            <Planet scale={2} />
+          </Suspense>
+          <OrbitControls enableZoom={false}/>
+        </Canvas>
+
+
       </div>
     </section>
-    
+
   );
 };
 

@@ -1,10 +1,8 @@
-import { FaHandSparkles } from "react-icons/fa";
 import { ReactTyped } from "react-typed";
 import TechLogos from "../components/TechLogos";
 import './Home.css'
 import StarBackground from "../components/StarBackground";
-
-
+import Logos from "../components/Logos/Logos";
 import { FaReact, FaHtml5, FaCss3Alt, FaJs, FaGithub } from "react-icons/fa";
 import Projects from "./Projects";
 import Contact from "./Contact";
@@ -44,17 +42,19 @@ const Home = () => {
     {/* Sección de descripción general */}
     <section id="biografia" className="min-h-screen flex items-center justify-center px-8 py-20 desc">
     <div className="max-w-3xl text-center">
-      <h3>INTRODUCCION</h3>
-      <h2 className="text-3xl md:text-4xl font-semibold text-white mb-6">
+      <h3 className="special-gothic-expanded-one-regular dosis">INTRODUCCIÓN</h3>
+      <h2 className="text-3xl md:text-4xl font-semibold text-white mb-6 alfa-slab-one-regular">
         Descripción General
       </h2>
-      <p className="text-lg md:text-xl text-gray-300">
-      ¡Hola! Soy Gomez Luciano, un apasionado desarrollador web de 25 años. Mi fascinación por las tecnologías me ha llevado a especializarme en lenguajes y herramientas como React JS, React Native, Node.js, JavaScript, HTML y CSS. Me encanta estar en constante aprendizaje y explorar las infinitas posibilidades que ofrecen las nuevas tecnologías, tanto en el ámbito del desarrollo web como en el educativo. Estoy siempre listo para aplicar mis conocimientos en la creación de páginas web y aplicaciones útiles que hagan una diferencia. ¡Gracias por visitar mi portfolio y espero que encuentres algo que te inspire!
+      <p className="text-lg md:text-xl text-gray-300 dosis">
+      ¡Hola! Soy Gomez Luciano, un apasionado desarrollador web de 25 años. Mi fascinación por las tecnologías me ha llevado a especializarme en lenguajes y herramientas como React, Node.js, JavaScript, HTML y CSS. Me encanta estar en constante aprendizaje y explorar las infinitas posibilidades que ofrecen las nuevas tecnologías, tanto en el ámbito del desarrollo web como en el educativo. Estoy siempre listo para aplicar mis conocimientos en la creación de páginas web y aplicaciones útiles que hagan una diferencia. ¡Gracias por visitar mi portfolio y espero que encuentres algo que te inspire!
       </p>
+      <Logos/>
+      <StarBackground />
     </div>
+
   </section>
   <section className="relative min-h-screen flex flex-col items-center justify-center bg-black text-white" id="projects">
-  <StarBackground />
     <Projects />
     <Contact/>
   </section>
